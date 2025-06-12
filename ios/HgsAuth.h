@@ -1,4 +1,3 @@
-#import <React/RCTBridgeModule.h>
 #import <React/RCTUtils.h>
 #import <Foundation/Foundation.h>
 #import <AuthenticationServices/AuthenticationServices.h>
