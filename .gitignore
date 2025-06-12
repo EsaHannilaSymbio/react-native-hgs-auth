@@ -1,2 +1,9 @@
 node_modules
 dist
+coverage
+build
+.gradle
+.idea
+.vscode
+.DS_Store
+*.tgz

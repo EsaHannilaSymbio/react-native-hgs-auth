@@ -36,7 +36,16 @@ export async function authorizeMicrosoft({
   tenant?: string
   scopes?: string[]
 }) {
-	console.log('Authorizing Microsoft with clientId:', clientId)
+	console.log('Authorizing Microsoft with clientId:', clientId, 'redirectUri:', redirectUri, 'tenant:', tenant, 'scopes:', scopes)
+	if (!clientId || !redirectUri) {
+		throw new Error('clientId and redirectUri are required')
+	}
+	if (!HgsAuth) {
+		throw new Error('HgsAuth module is not available. Ensure it is linked correctly.')
+	}
+	if (typeof HgsAuth.startAuth !== 'function') {
+		throw new Error('HgsAuth.startAuth is not a function. Ensure the native module is implemented correctly.')
+	}
 	const codeVerifier = generateCodeVerifier()
 	console.log('Generated code verifier:', codeVerifier)
 	const codeChallenge = await generateCodeChallenge(codeVerifier)

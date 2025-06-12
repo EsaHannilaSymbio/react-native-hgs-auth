@@ -1,1 +1,17 @@
 ./dist
+**/.tgz
+./gradle
+./build
+./node_modules
+./coverage
+./.idea
+./.vscode
+./.DS_Store
+./.git
+./.gitignore
+./.npmrc
+./.eslintrc.js
+./.prettierrc
+./.prettierignore
+./.editorconfig
+./.eslintignore
