@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name           = "HgsAuth"
-  s.version        = "0.1.4"
+  s.version        = "0.1.5"
   s.summary        = "Native Microsoft Auth for React Native"
   s.homepage       = "https://github.com/EsaHannilaSymbio/react-native-hgs-auth"
-  s.swift_versions = ["5.0"]
+  s.swift_versions = "5.0"
   s.license        = { :type => "MIT", :text => "MIT License" }
   s.authors        = { "Esa Hannila" => "esa@hannila.fi" }
   s.platform       = :ios, "13.0"

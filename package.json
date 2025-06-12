@@ -1,12 +1,20 @@
 {
     "name": "react-native-hgs-auth",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "main": "dist/index.js",
-    "types": "index.ts",
+    "types": "dist/index.d.ts",
     "scripts": {
         "build": "npx tsc --build",
         "test": "jest"
     },
+    "files": [
+        "dist/**/*",
+        "android/**/*",
+        "ios/**/*",
+        "HgsAuth.podspec",
+        "react-native.config.js",
+        "README.md"
+    ],
     "author": "Esa Hannila",
     "license": "MIT",
     "homepage": "https://github.com/EsaHannilaSymbio/react-native-hgs-auth",
