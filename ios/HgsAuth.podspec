@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "HgsAuth"
-  s.version = "0.1.8"
+  s.version = "0.1.9"
   s.summary = "Native Microsoft Auth for React Native"
   s.homepage = "https://github.com/EsaHannilaSymbio/react-native-hgs-auth"
   s.swift_versions = "5.0"
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.source = { :git => "https://github.com/EsaHannilaSymbio/react-native-hgs-auth.git", :tag => "#{s.version}" }
   s.source_files = "ios/**/*.{h,m,mm,swift}"
   s.requires_arc = true
-
+  s.ios.frameworks = 'AuthenticationServices'
   s.static_framework = true
 
   s.dependency 'React-Core'
