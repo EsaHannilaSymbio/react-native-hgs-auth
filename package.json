@@ -1,7 +1,7 @@
 {
     "name": "react-native-hgs-auth",
-    "version": "0.1.0",
-    "main": "index.ts",
+    "version": "0.1.1",
+    "main": "dist/index.js",
     "types": "index.ts",
     "scripts": {
         "build": "npx tsc --build",
@@ -22,6 +22,15 @@
         "auth",
         "pkce"
     ],
+    "react-native": {
+        "ios": {
+            "podspecPath": "HgsAuth.podspec"
+        },
+        "android": {
+            "sourceDir": "./android"
+        }
+    },
+    "nativePackage": true,
     "dependencies": {
         "@noble/hashes": "^1.3.0",
         "buffer": "^6.0.3",
@@ -34,6 +43,7 @@
         "react-native": ">=0.71"
     },
     "devDependencies": {
+        "@react-native-community/cli": "^18.0.0",
         "@types/node": "^24.0.1"
     }
 }
