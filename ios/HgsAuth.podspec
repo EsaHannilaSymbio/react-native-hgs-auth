@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name           = "HgsAuth"
-  s.version        = "0.1.5"
+  s.version        = "0.1.6"
   s.summary        = "Native Microsoft Auth for React Native"
   s.homepage       = "https://github.com/EsaHannilaSymbio/react-native-hgs-auth"
   s.swift_versions = "5.0"
@@ -11,9 +11,11 @@ Pod::Spec.new do |s|
   s.source_files   = "ios/**/*.{h,m,mm,swift}"
   s.requires_arc   = true
   s.dependency     "React-Core"
+  s.dependency     "React-Core/Bridge"
   s.dependency     "React-RCTBridge"
   s.dependency     "React-RCTUtils"
   s.dependency     "ReactCommon"
+  s.static_framework = true
 
   s.pod_target_xcconfig = {
     "HEADER_SEARCH_PATHS" => "\"${PODS_ROOT}/Headers/Public/**\" \"${PODS_ROOT}/React-Core/**\""
